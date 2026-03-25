@@ -33,7 +33,7 @@ const Navbar = () => {
       {/* Blended Layer: Handles Logo and Links */}
       <nav className={`${baseWrapperClasses} z-40 mix-blend-difference pointer-events-none`}>
         <div className="flex items-center gap-2 pointer-events-auto">
-          <img src={logo} alt="Logo" className="h-[10vh] w-auto brightness-0 invert" />
+          <img src={logo} alt="Logo" className="h-[6vh] md:h-[10vh] w-auto brightness-0 invert" />
         </div>
 
         <div className="hidden md:flex gap-8 text-white text-sm tracking-wide font-medium pointer-events-auto">
@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className={`${baseWrapperClasses} z-50 pointer-events-none`}>
         {/* Invisible layout clone of the left side */}
         <div className="flex items-center gap-2 invisible">
-          <img src={logo} alt="Logo" className="h-[10vh] w-auto" />
+          <img src={logo} alt="Logo" className="h-[6vh] md:h-[10vh] w-auto" />
         </div>
 
         {/* Invisible layout clone of the center links */}

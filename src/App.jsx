@@ -141,20 +141,20 @@ function App() {
       <Navbar />
       <div>
         <div className='h-[110vh] overflow-hidden relative'>
-          <img className='w-full object-cover object-top' src={hero} alt="Hero" />
+          <img className='w-full h-screen object-cover object-center md:object-top' src={hero} alt="Hero" />
           <img className='absolute bottom-[-13vh] z-10 w-[120vw] left-[10vw]' src={rectangle} alt="" />
-          <div className='absolute top-[20vh] right-[4vw]'>
-            <p className='text-white font-regular text-5xl sm:text-6xl md:text-7xl lg:text-[2vh] leading-[3vh] text-right'>
+          <div className='absolute top-[12vh] md:top-[20vh] right-[4vw] md:right-[6vw] max-w-[85%] md:w-auto mt-[2vh] md:mt-0'>
+            <p className='text-white font-regular text-lg md:text-2xl lg:text-[2vh] leading-[1.6] md:leading-[3vh] text-right md:text-right w-full flex flex-col items-end drop-shadow-md'>
               <span className="block">{renderAnimatedWords("Design intuitive user experiences,")}</span>
               <span className="block">{renderAnimatedWords("develop scalable digital products, and")}</span>
               <span className="block">{renderAnimatedWords("deliver intelligent AI solutions.")}</span>
             </p>
           </div>
-          <div className='absolute top-[70vh] left-[4vw]'>
-            <h1 className="text-[#000000] font-medium text-5xl sm:text-6xl md:text-7xl lg:text-6xl leading-[1.1]">
+          <div className='absolute bottom-[15vh] md:bottom-auto md:top-[70vh] left-[4vw] w-[92vw] md:w-auto'>
+            <h1 className="text-[#000000] font-medium text-[8vw] sm:text-5xl md:text-6xl lg:text-6xl leading-[1.1]">
               {renderAnimatedLetters("We Turn Ideas into Scalable", "hero-char-2")}
             </h1>
-            <h1 className='text-[#000000] font-bold text-5xl sm:text-6xl md:text-7xl lg:text-9xl tracking-tight leading-[1.1]'>
+            <h1 className='text-[#000000] font-bold text-[14vw] sm:text-6xl md:text-7xl lg:text-9xl tracking-tight leading-none md:leading-[1.1] mt-[1vh] md:mt-0'>
               {renderAnimatedLetters("Digital Products", "hero-char-2")}
             </h1>
           </div>
@@ -165,7 +165,7 @@ function App() {
           onMouseLeave={handleMouseLeave}
           onMouseMove={handleMouseMove}
           onClick={handleVideoClick}
-          className={`h-[80vh] w-[75vw] mx-auto flex justify-center items-center bg-black overflow-hidden rounded-[20px] relative transition-cursor ${!isVideoPlaying ? 'cursor-none' : ''}`}
+          className={`h-[40vh] md:h-[80vh] w-[90vw] md:w-[75vw] mx-auto flex justify-center items-center bg-black overflow-hidden rounded-[20px] relative transition-cursor ${!isVideoPlaying ? 'cursor-none' : ''}`}
         >
           {!isVideoPlaying ? (
             <img
@@ -184,11 +184,11 @@ function App() {
             </iframe>
           )}
         </div>
-        <div className='h-[50vh] px-[4vw] flex items-center fade-up'>
-          <p className='text-[#353535] font-regular text-5xl sm:text-6xl md:text-7xl lg:text-[4vh] leading-[5vh] w-1/2'>Transforms innovative ideas into impactful digital solutions through collaborative design, agile development, and AI-driven insights, delivering user-centered products that help businesses adapt and succeed in a rapidly evolving world.</p>
+        <div className='h-auto md:h-[50vh] py-[10vh] md:py-0 px-[4vw] flex items-center fade-up'>
+          <p className='text-[#353535] font-regular text-2xl md:text-5xl lg:text-[4vh] leading-relaxed md:leading-[5vh] w-[90%] md:w-[70%] lg:w-1/2'>Transforms innovative ideas into impactful digital solutions through collaborative design, agile development, and AI-driven insights, delivering user-centered products that help businesses adapt and succeed in a rapidly evolving world.</p>
         </div>
-        <div className='h-[20vh] px-[4vw] flex items-center fade-up'>
-          <h1 className='text-[#000000] font-medium text-5xl sm:text-6xl md:text-7xl lg:text-6xl w-7/8'>Our Clients, from bold startups to global industry icons</h1>
+        <div className='h-auto md:h-[20vh] py-[5vh] md:py-0 px-[4vw] flex items-center fade-up'>
+          <h1 className='text-[#000000] font-medium text-4xl sm:text-5xl md:text-6xl lg:text-6xl w-full md:w-[85%]'>Our Clients, from bold startups to global industry icons</h1>
         </div>
 
         {/* Infinite Marquee Section */}
@@ -211,10 +211,10 @@ function App() {
             ))}
           </div>
         </div>
-        <div className='h-[20vh] px-[4vw] flex items-center mt-[10vh] fade-up'>
-          <h1 className='text-[#000000] font-medium text-5xl sm:text-6xl md:text-7xl lg:text-6xl w-7/8'>We have the skill to shape what's next.</h1>
+        <div className='h-auto md:h-[20vh] py-[5vh] px-[4vw] flex items-center mt-[5vh] md:mt-[10vh] fade-up'>
+          <h1 className='text-[#000000] font-medium text-4xl sm:text-5xl md:text-6xl lg:text-6xl w-full md:w-[85%]'>We have the skill to shape what's next.</h1>
         </div>
-        <div className="px-[4vw] py-[2vh] h-[80vh] flex gap-[2vw] w-full fade-up">
+        <div className="px-[4vw] py-[2vh] h-auto md:h-[80vh] flex flex-col md:flex-row gap-[4vh] md:gap-[2vw] w-full fade-up">
           {/* Card 1 */}
           <div className="rounded-[24px] p-8 md:p-10 flex flex-col h-[55vh] md:h-[65vh] min-w-[85vw] md:min-w-[30vw] md:flex-1 relative overflow-hidden bg-[#dddddd] cursor-pointer group">
             <img src={S} alt="Background" className="absolute inset-0 w-full h-full object-cover z-0 opacity-80 group-hover:opacity-100 grayscale group-hover:grayscale-0 transition-all duration-500" />
@@ -241,8 +241,8 @@ function App() {
             </div>
           </div>
         </div>
-        <div className='h-[20vh] px-[4vw] flex items-center fade-up'>
-          <h1 className='text-[#000000] font-medium text-5xl sm:text-6xl md:text-7xl lg:text-6xl w-7/8'>Our work, from petal to planet.</h1>
+        <div className='h-auto md:h-[20vh] py-[5vh] md:py-0 px-[4vw] flex items-center mt-[5vh] md:mt-0 fade-up'>
+          <h1 className='text-[#000000] font-medium text-4xl sm:text-5xl md:text-6xl lg:text-6xl w-full md:w-[85%]'>Our work, from petal to planet.</h1>
         </div>
         {/* Project 1: Bosch */}
         <div className="border-t border-[#EAEAEA] py-[6vh] mx-[4vw] flex flex-col md:flex-row gap-[4vw] mt-[2vh] fade-up">

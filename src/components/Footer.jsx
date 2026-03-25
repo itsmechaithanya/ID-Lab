@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="flex items-center">
         <a 
           href="#" 
-          className="group inline-flex items-center gap-[1.5vw] text-white text-[2.5rem] md:text-[3.5vw] font-medium tracking-tight hover:opacity-75 transition-opacity"
+          className="group inline-flex items-center gap-[3vw] md:gap-[1.5vw] text-white text-3xl md:text-[3.5vw] font-medium tracking-tight hover:opacity-75 transition-opacity leading-tight"
         >
           Ready to bring your innovative ideas to life?
           <span className="font-light tracking-normal transform transition-transform duration-300 group-hover:translate-x-2">→</span>
@@ -75,7 +75,7 @@ const Footer = () => {
         </div>
 
         {/* Right: Social Links bar */}
-        <div className="flex items-center gap-[3vw]">
+        <div className="flex flex-wrap items-center gap-[4vw] md:gap-[3vw] mt-[4vh] md:mt-0">
           <a href="#" className="text-white text-[0.85rem] md:text-[0.9vw] font-medium tracking-wide hover:text-[#999999] transition-colors">LinkedIn</a>
           <a href="#" className="text-white text-[0.85rem] md:text-[0.9vw] font-medium tracking-wide hover:text-[#999999] transition-colors">Instagram</a>
           <a href="#" className="text-white text-[0.85rem] md:text-[0.9vw] font-medium tracking-wide hover:text-[#999999] transition-colors">X</a>
